@@ -1,0 +1,75 @@
+/* media query */
+@import url(./media.css);
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+.todo-container {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 25px;
+    max-width: 674px;
+    height: 90vh;
+    font-family: 'Gowun Dodum', sans-serif;
+    background: #090204;
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.todo-container #todo-form {
+    width: 100%;
+    position: absolute;
+    bottom: 2%;
+    text-align: center;
+    /* left: 20%; */
+    /* transform: translate(-20%, -10%); */
+}
+
+input {
+    width: 90%;
+    height: 60px;
+    border-radius: 6px;
+    box-shadow: 2px 3px 2px rgba(255, 255, 255, .81);
+    font-size: 100%;
+    outline: none;
+    text-align: center;
+}
+
+input:hover {
+    opacity: .8;
+}
+
+#todo-list {
+    position: absolute;
+    margin-top: 25px;
+    width: 100%;
+    text-align: center;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, .25);
+}
+
+#todo-list .item {
+    position: relative;
+    z-index: 3000;
+}
+
+#todo-list .item, .item-text {
+    color: #fff;
+    padding: 8px;
+}
+
+#todo-list .item .btn {
+    margin-left: 5px;
+    border-radius: 6px;
+    height: 20px;
+    border: none;
+}
